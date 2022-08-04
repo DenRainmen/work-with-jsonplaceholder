@@ -11,6 +11,7 @@ type SinglePost = {
     "body": string
 }
 
+
 function App() {
 
     let [apiData, setApiData] = useState<Array<SinglePost>>([])
