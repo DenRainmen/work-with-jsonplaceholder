@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Button} from './components/Button'
@@ -37,6 +37,9 @@ function App() {
     }
 
     // console.log('Data from JSONPlaceholder', apiData)
+
+    // хук useEffect позволяет нам сразу(без участия кнопки) получить данные с API
+    useEffect(()=>{getRequestHandler()},[])
 
     return (
         <div className="App">
