@@ -41,6 +41,7 @@ function App() {
     // хук useEffect позволяет нам сразу(без участия кнопки) получить данные с API
     useEffect(()=>{getRequestHandler()},[])
 
+
     return (
         <div className="App">
             <Button
