@@ -18,7 +18,7 @@ export function Button(props: ButtonTypeProps) {
     return (
         <div>
             <button
-                style={{background: "limegreen", borderRadius: "5px"}}
+                style={{background: "dodgerblue", borderRadius: "5px"}}
                 onClick={onClickButtonHandler}>
                 {props.buttonName}
             </button>
