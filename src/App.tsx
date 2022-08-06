@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import {Button} from './components/Button'
@@ -28,7 +28,7 @@ function App() {
 
 
     const getRequestHandler = () => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=5')
             .then(response => response.json())
             .then(json => setApiData(json))
     }
@@ -40,7 +40,7 @@ function App() {
     // console.log('Data from JSONPlaceholder', apiData)
 
     // хук useEffect позволяет нам сразу(без участия кнопки) получить данные с API
-    useEffect(()=>{getRequestHandler()},[])
+    // useEffect(()=>{getRequestHandler()},[])
 
     return (
         <div className="App">
